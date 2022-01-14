@@ -93,21 +93,21 @@ $(document).ready(function(){
     console.log(python);
     console.log(cSharp);
 
-    if(javaScript > python && javaScript > cSharp){
-      $(".result#javaScript").show();
-      /*$("#javaScript").toggle();*/
+    if((javaScript === 5 || javaScript >= 3) || (javaScript === python || javaScript === cSharp) && (fun === 'javaScript'|| fun != 'python')){
+      $(".result").show();
+      $("#javaScript").show();
       $('#python').hide();
       $('#cSharp').hide();
     }
-    else if(python > cSharp && python > javaScript){
+    else if((python === 5 || python >= 3) || (python === cSharp || python === javaScript)  && (fun === 'python' || fun != 'cSharp')){
       $(".result").show();
-      $("#python").toggle();
+      $("#python").show();
       $('#javaScript').hide();
       $('#cSharp').hide();
     }
-    else if(cSharp > python && cSharp > javaScript){
+    else if((cSharp === 5 || cSharp >= 3) || (cSharp === python || cSharp === javaScript) && (fun === 'cSharp'|| fun != 'javaScript')){
       $(".result").show();
-      $("#cSharp").toggle();
+      $("#cSharp").show();
       $('#javaScript').hide();
       $('#python').hide();
     }

@@ -31,7 +31,6 @@ button{
   background-color: black;
   color: rgb(129,205,101);
   border: rgb(129,205,101) 5px solid;
-  
 }
 label{
   margin: 10px;
@@ -43,6 +42,17 @@ button:active{
 }
 .result{
   display: none;
+}
+.result img{
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+.result h1{
+  text-align: center;
+}
+.result p{
+  text-align: center;
 }
 #javaScript{
   display: none;
