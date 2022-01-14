@@ -1,6 +1,7 @@
 let javaScript = 0;
 let python = 0;
 let cSharp = 0;
+
 function difficultyMeter(difficulty){
   if(difficulty === 'javaScript'){
     javaScript+=1;
@@ -74,7 +75,6 @@ function funMeter(fun){
 
 $(document).ready(function(){
   $("#languageForm").submit(function(event){
-
     event.preventDefault();
 
     const difficulty = $("#difficulty").val();
@@ -93,20 +93,29 @@ $(document).ready(function(){
     console.log(python);
     console.log(cSharp);
 
-    if(javaScript === 5 || javaScript >= 3){
-      $(".result").show();
-      $("#javaScript").toggle();
+    if(javaScript > python && javaScript > cSharp){
+      $(".result#javaScript").show();
+      /*$("#javaScript").toggle();*/
+      $('#python').hide();
+      $('#cSharp').hide();
     }
-    else if(python === javaScript && python >= 3){
+    else if(python > cSharp && python > javaScript){
       $(".result").show();
       $("#python").toggle();
+      $('#javaScript').hide();
+      $('#cSharp').hide();
     }
-    else if(cSharp === python && cSharp >= 3){
+    else if(cSharp > python && cSharp > javaScript){
       $(".result").show();
       $("#cSharp").toggle();
+      $('#javaScript').hide();
+      $('#python').hide();
     }
     else{
       $(".result").hide();
     }
+    javaScript = 0;
+    python = 0;
+    cSharp = 0;
   })
 });
