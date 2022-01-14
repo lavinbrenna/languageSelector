@@ -41,6 +41,15 @@ button:active{
   color: black;
   border: black 5px solid;
 }
-#result{
+.result{
+  display: none;
+}
+#javaScript{
+  display: none;
+}
+#python{
+  display: none;
+}
+#cSharp{
   display: none;
 }
