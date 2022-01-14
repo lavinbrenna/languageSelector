@@ -5,7 +5,7 @@ body{
   background-size: 300%;
 }
 .header{
-  background-color: black;
+  background-color: rgba(0,0,0,0.4);
   margin: auto;
   padding: 20px;
   text-align: center;
@@ -15,11 +15,26 @@ body{
   0 0 21px rgb(129,205,101),
   0 0 42px #0fa,
   0 0 82px #0fa,
-  0 0 92px #0fa,
-  0 0 102px #0fa,
-  0 0 151px #0fa;
-              ;
+  0 0 92px #0fa;
+  font-family: 'Press Start 2P', cursive;
 }
 .container-fluid{
+  background-color: rgba(0,0,0, 0.8);
+  color: rgb(129,205,101);
+  font-family: 'Orbitron', sans-serif;
+}
+.button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+button{
   background-color: black;
+  color: rgb(129,205,101);
+  border: rgb(129,205,101) 5px solid;
+  
+}
+button:active{
+  background-color: rgb(129,205,101);
+  color: black;
+  border: black 5px solid;
 }
