@@ -1,0 +1,25 @@
+body{
+  background-image: url('../img/background.jpg');
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: 300%;
+}
+.header{
+  background-color: black;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  color: rgb(129,205,101);
+  text-shadow: 0 0 7px rgb(129,205,101),
+  0 0 10px rgb(129,205,101),
+  0 0 21px rgb(129,205,101),
+  0 0 42px #0fa,
+  0 0 82px #0fa,
+  0 0 92px #0fa,
+  0 0 102px #0fa,
+  0 0 151px #0fa;
+              ;
+}
+.container-fluid{
+  background-color: black;
+}
