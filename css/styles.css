@@ -40,13 +40,19 @@ button:active{
   color: black;
   border: black 5px solid;
 }
+.input-group{
+  display: block;
+  margin: auto;
+  width: 50%;
+}
 .result{
   display: none;
   margin: auto;
   padding: 10px;
+  width: 50%;
 }
 .result img{
-  display: block;
+  float: left;
   margin: auto;
   width: 50%;
 }
