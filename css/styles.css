@@ -33,8 +33,14 @@ button{
   border: rgb(129,205,101) 5px solid;
   
 }
+label{
+  margin: 10px;
+}
 button:active{
   background-color: rgb(129,205,101);
   color: black;
   border: black 5px solid;
+}
+#result{
+  display: none;
 }
