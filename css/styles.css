@@ -52,7 +52,7 @@ button:active{
   width: 50%;
 }
 .result img{
-  float: left;
+  display: block;
   margin: auto;
   width: 50%;
 }
@@ -61,6 +61,7 @@ button:active{
 }
 .result p{
   text-align: center;
+  margin: 10px;
 }
 #javaScript{
   display: none;
