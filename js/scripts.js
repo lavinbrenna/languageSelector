@@ -95,19 +95,19 @@ $(document).ready(function(){
 
     if((javaScript === 5 || javaScript >= 3) || (javaScript === python || javaScript === cSharp) && (fun === 'javaScript'|| fun != 'python')){
       $(".result").show();
-      $("#javaScript").show();
+      $("#javaScript").slideDown();
       $('#python').hide();
       $('#cSharp').hide();
     }
     else if((python === 5 || python >= 3) || (python === cSharp || python === javaScript)  && (fun === 'python' || fun != 'cSharp')){
       $(".result").show();
-      $("#python").show();
+      $("#python").slideDown();
       $('#javaScript').hide();
       $('#cSharp').hide();
     }
     else if((cSharp === 5 || cSharp >= 3) || (cSharp === python || cSharp === javaScript) && (fun === 'cSharp'|| fun != 'javaScript')){
       $(".result").show();
-      $("#cSharp").show();
+      $("#cSharp").slideDown();
       $("#javaScript").hide();
       $("#python").hide();
     }

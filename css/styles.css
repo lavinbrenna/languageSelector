@@ -40,11 +40,6 @@ button:active{
   color: black;
   border: black 5px solid;
 }
-.input-group{
-  display: block;
-  margin: auto;
-  width: 50%;
-}
 .result{
   display: none;
   margin: auto;
