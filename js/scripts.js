@@ -98,18 +98,21 @@ $(document).ready(function(){
       $("#javaScript").show();
       $('#python').hide();
       $('#cSharp').hide();
+      $(".input-group").hide();
     }
     else if((python === 5 || python >= 3) || (python === cSharp || python === javaScript)  && (fun === 'python' || fun != 'cSharp')){
       $(".result").show();
       $("#python").show();
       $('#javaScript').hide();
       $('#cSharp').hide();
+      $(".input-group").hide();
     }
     else if((cSharp === 5 || cSharp >= 3) || (cSharp === python || cSharp === javaScript) && (fun === 'cSharp'|| fun != 'javaScript')){
       $(".result").show();
       $("#cSharp").show();
-      $('#javaScript').hide();
-      $('#python').hide();
+      $("#javaScript").hide();
+      $("#python").hide();
+      $(".input-group").hide();
     }
     else{
       $(".result").hide();
@@ -118,4 +121,9 @@ $(document).ready(function(){
     python = 0;
     cSharp = 0;
   })
+});
+$('#reset').on('click', ()=>{
+  event.preventDefault();
+  $(".result").hide()
+  $(".input-group").show();
 });
