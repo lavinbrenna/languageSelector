@@ -16,6 +16,7 @@ function difficultyMeter(difficulty){
     return cSharp
   }
 }
+
 function whatMeter(what){
   if(what === 'javaScript'){
     javaScript+= 1;
