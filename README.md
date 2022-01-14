@@ -1,8 +1,8 @@
 # Programming Language Quiz
 
-#### By Brenna lavin
+#### By Brenna Lavin
 
-#### Jack into the matrix to learn which programming language is right for you.
+#### Jack into the matrix to learn which programming language is right for you
 
 ## Technologies Used
 
@@ -22,7 +22,6 @@ This project is a practice in using JavaScript and jQuery by taking user input a
 * navigate to index.html
 * open in default browser
 * or open using following GH pages link
-* 
 
 ## Known Bugs
 
@@ -51,4 +50,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-

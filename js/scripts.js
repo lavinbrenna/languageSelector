@@ -93,19 +93,19 @@ $(document).ready(function(){
     console.log(python);
     console.log(cSharp);
 
-    if((javaScript === 5 || javaScript >= 3) || (javaScript === python || javaScript === cSharp) && (fun === 'javaScript'|| fun != 'python')){
+    if((javaScript === 5 || javaScript >= 3) || (javaScript === python || javaScript === cSharp) && (fun === 'javaScript')){
       $(".result").show();
       $("#javaScript").slideDown();
       $('#python').hide();
       $('#cSharp').hide();
     }
-    else if((python === 5 || python >= 3) || (python === cSharp || python === javaScript)  && (fun === 'python' || fun != 'cSharp')){
+    else if((python === 5 || python >= 3) || (python === cSharp || python === javaScript)  && (fun === 'python')){
       $(".result").show();
       $("#python").slideDown();
       $('#javaScript').hide();
       $('#cSharp').hide();
     }
-    else if((cSharp === 5 || cSharp >= 3) || (cSharp === python || cSharp === javaScript) && (fun === 'cSharp'|| fun != 'javaScript')){
+    else if((cSharp === 5 || cSharp >= 3) || (cSharp === python || cSharp === javaScript) && (fun === 'cSharp')){
       $(".result").show();
       $("#cSharp").slideDown();
       $("#javaScript").hide();
