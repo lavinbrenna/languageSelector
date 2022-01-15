@@ -31,6 +31,7 @@ function whatMeter(what){
     return cSharp;
   }
 }
+
 function whyMeter(why){
   if(why === 'javaScript'){
     javaScript+=1;
@@ -45,6 +46,7 @@ function whyMeter(why){
     return cSharp;
   }
 }
+
 function frontOrBackMeter(frontOrBack){
   if(frontOrBack === 'javaScript'){
     javaScript+=1;
@@ -59,6 +61,7 @@ function frontOrBackMeter(frontOrBack){
     return cSharp;
   }
 }
+
 function funMeter(fun){
   if(fun === 'javaScript'){
     javaScript+=1;
@@ -94,19 +97,19 @@ $(document).ready(function(){
     console.log(python);
     console.log(cSharp);
 
-    if((javaScript === 5 || javaScript >= 3) || (javaScript === python || javaScript === cSharp) && (fun === 'javaScript')){
+    if((javaScript === 5 || javaScript >= 3) || (javaScript === python || javaScript === cSharp) && fun === 'javaScript'){
       $(".result").show();
       $("#javaScript").slideDown();
       $('#python').hide();
       $('#cSharp').hide();
     }
-    else if((python === 5 || python >= 3) || (python === cSharp || python === javaScript)  && (fun === 'python')){
+    else if((python === 5 || python >= 3) || (python === cSharp || python === javaScript)  && (difficulty === 'python'|| difficulty != 'cSharp')){
       $(".result").show();
       $("#python").slideDown();
       $('#javaScript').hide();
       $('#cSharp').hide();
     }
-    else if((cSharp === 5 || cSharp >= 3) || (cSharp === python || cSharp === javaScript) && (fun === 'cSharp')){
+    else if((cSharp === 5 || cSharp >= 3) || (cSharp === python || cSharp === javaScript) && (difficulty === 'cSharp' || difficulty != 'python')){
       $(".result").show();
       $("#cSharp").slideDown();
       $("#javaScript").hide();
