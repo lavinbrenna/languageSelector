@@ -21,9 +21,6 @@ This project is a practice in using JavaScript and jQuery by taking user input a
 * Clone git repository to local machine.
 * navigate to index.html
 * open in default browser
-* or open using following GH pages link
-* Language Selector[https://lavinbrenna.github.io/languageSelector/]
-
 ## Known Bugs
 
 * No known issues
