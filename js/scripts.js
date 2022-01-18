@@ -93,11 +93,7 @@ $(document).ready(function(){
     frontOrBackMeter(frontOrBack);
     funMeter(fun);
 
-    console.log(javaScript);
-    console.log(python);
-    console.log(cSharp);
-
-    if((javaScript === 5 || javaScript >= 3) || (javaScript === python || javaScript === cSharp) && fun === 'javaScript'){
+    if((javaScript === 5 || javaScript >= 3) || (javaScript === python || javaScript === cSharp) && (python === 1 || cSharp === 1)){
       $(".result").show();
       $("#javaScript").slideDown();
       $('#python').hide();
