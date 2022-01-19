@@ -39,19 +39,19 @@ $(document).ready(function(){
     console.log(python);
     console.log(cSharp);
 
-    if(((javaScript === 5 || javaScript >= 3) && fun === 'javaScript')||((javaScript === python || javaScript === cSharp) && difficulty === 'javaScript')){
+    if((javaScript === 5 || javaScript >= 3) || fun === 'javaScript'){
       $(".result").show();
       $("#javaScript").slideDown();
       $('#python').hide();
       $('#cSharp').hide();
     }
-    else if(((python === 5 || python >= 3) && fun === 'python')||((python === javaScript || python === cSharp) && (difficulty === 'python'))){
+    else if((python === 5 || python >= 3) || (why === 'python' || fun === 'python')){
       $(".result").show();
       $("#python").slideDown();
       $('#javaScript').hide();
       $('#cSharp').hide();
-    }
-    else if(((cSharp === 5 || cSharp >= 3) && fun === 'cSharp')||((cSharp === javaScript || cSharp === python) && (difficulty === 'cSharp' || frontOrBack === 'cSharp'))){
+    } 
+    else if((cSharp === 5 || cSharp >= 3) || (difficulty === 'cSharp' || fun ==='cSharp')){
       $(".result").show();
       $("#cSharp").slideDown();
       $("#javaScript").hide();
