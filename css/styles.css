@@ -120,3 +120,7 @@ iframe{
   0 0 92px #0fa;
 }
 
+#languageForm{
+  margin: auto;
+  width: 50%;
+}
